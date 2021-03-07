@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/"><img src="https://freeiconshop.com/wp-content/uploads/edd/book-flat.png" width="30" height="30"  alt="logo"></a>
+      <h2>Biblioteca Virtual</h2>
+    </div>
+    <a href="#" onclick="Favorites(); return false;">
+      <h4 >Mis Libros Favoritos</h4>
+    </a>
+  </header>
+  <div class="top">
+     <div class="jumbotron">
+            <h1 id="logotitle">Buscador de libros</h1>
+    <form class="search">
+      <select class="search__drop" name="genre" id="type">
+        <option value="all">Todos</option>
+        <option value="ebooks">Libros</option>
+      </select>
+      <input class="search__txt" type="text" placeholder="Busca tu libro o autor" id="txt">
+      <input class="btn" type="button" value="Busca" id="btn">
+    </form>
+
+  </div>
+  <main id="main">
+    <h2 id=mainTitle></h2>
+    <div class="results" id="results">
+    </div>
+    <div class="pagination" id="pagination">
+      <form>
+        <input type="button" value="<" onclick="prev()"></input>
+        <input type="text" id="txtPage" disabled>
+        <input type="button" value=">" onclick="next()"></input>
+      </form>
+      <p id="total"></p>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

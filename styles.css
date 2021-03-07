@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+* {
+  margin: 0;
+  font-family: 'Vidaloka', serif;
+  color: white;
+}
+body {
+  background-color: #f3f7f7;
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://swall.teahub.io/photos/small/190-1905111_library-books.jpg");
+}
+header {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  justify-content: space-around;
+  background-image: url("https://swall.teahub.io/photos/small/190-1905111_library-books.jpg");
+  position: fixed;
+  font-size: 1.2em;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.1);
+}
+header h2 {
+  margin-left: 10px;
+}
+
+ .jumbotron {
+            text-align: center;
+        }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  display: flex;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.top {
+  background-color: white;
+  box-shadow: 0px 5px 12px -5px rgba(0, 0, 0, 0.1);
+}
+
+.search * {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.btn {
+  border-style: none;
+  color: white;
+  background-color: #343a40;
+  cursor: pointer;
+}
+
+.search__drop {
+  color: white;
+  background-color: #343a40;
+  cursor: pointer;
+}
+
+.search__txt {
+  border-style: none;
+  background-color: #e7e7e7;
+  width: 40%;
+}
+
+.logo {
+  display: inline-flex;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card{
+  width: 150px;
+  height: 300px;
+  float: left;
+  margin: 10px 0px 160px 27px;
+  flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card img {
+  box-shadow: 5px 6px 9px 1px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+main {
+  display: none;
+  padding: 10%;
+  max-width: 1024px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+   background-image: url("https://swall.teahub.io/photos/small/190-1905111_library-books.jpg");
+}
+
+main h2 {
+  color: white;
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination *{
+  margin-bottom: 5px;
+}
+
+.pagination input {
+  text-align: center;
+  width: 25px;
+}
+
+.fav{
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fav--inactive{
+  color: gray;
+}
+.fav--inactive:hover{ 
+  color: blue;
+}
+.fav--active{
+  color: blue;
+}
+.fav--active:hover{
+  color: gray;
