@@ -63,7 +63,7 @@ const setCards = (data) => {
     if (favorites.includes(element.id)) favStatus = favActive;
     else favStatus = favInactive;
     if (typeof element.volumeInfo.imageLinks == "undefined")
-      
+      cover = "no_cover_thumb.gif";
     else cover = element.volumeInfo.imageLinks.thumbnail;
     output.innerHTML += `
   <div class="card">
